@@ -72,6 +72,9 @@ namespace QQ.Framework.Domains
 
         public void Login()
         {
+            var ecdh = ECDHCrypter.GenKeys(711);
+            _user.TXProtocol.BufDhPublicKey = ecdh.EC_publickey;
+            _user.TXProtocol.BufDhShareKey = ecdh.EC_sharekey;
             Send(new Send_0X0825(_user, false));
             MessageLog($"登录服务器{_host}");
         }

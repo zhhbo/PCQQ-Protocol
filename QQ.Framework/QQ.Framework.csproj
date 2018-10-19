@@ -222,6 +222,7 @@
     <Compile Include="TXProtocol.cs" />
     <Compile Include="Utils\CRC32.cs" />
     <Compile Include="Utils\DispatchPacketToCommand.cs" />
+    <Compile Include="Utils\ECDHCrypter.cs" />
     <Compile Include="Utils\GZipByteArray.cs" />
     <Compile Include="Utils\HttpWebClient.cs">
       <SubType>Component</SubType>
